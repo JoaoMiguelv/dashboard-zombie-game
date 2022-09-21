@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie-Jackson</title>
+    <link href="index.css">
+</head>
+
+<body>
+    <h1>Welcome to Zombie-Jackson!</h1>
+    <hr>
+    <table border="1" cellpadding="15px">
+        <caption>FIREBASE</caption>
+        <thead>
+            <tr>
+                <th>PLAYER</th>
+                <th>SCORE</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% player.forEach(function(player){ %>
+                <tr>
+                    <td>
+                        <%= player.name %>
+                    </td>
+                    <td>
+                        <%= player.score %>
+                    </td>
+                </tr>
+                <% })%>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
